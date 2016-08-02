@@ -23,12 +23,12 @@ const router = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={FormContainer}></IndexRoute>
-		<Route path="/view/:userId" component={ContactDetail}></Route>
-		<Route path="/edit/:userId" component={ContactEdit}></Route>		
-		<Route path="/new" component={ContactNew}></Route>		
+    		<Route path="/view/:userId" component={ContactDetail}></Route>
+    		<Route path="/edit/:userId" component={ContactEdit}></Route>		
+    		<Route path="/new" component={ContactNew}></Route>		
       </Route>
     </Router>
   </Provider>
 )
 
-render(router, document.getElementById('root')); 
+render(router, document.getElementById('root'));
